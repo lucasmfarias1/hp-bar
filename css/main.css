@@ -222,7 +222,7 @@ p {
 .cardapio__itens {
   text-align: left;
   display: flex;
-  /* display: none; */
+  display: none;
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
@@ -313,6 +313,14 @@ p {
   margin: 0;
 }
 
+#cardapio-burgers {
+  display: none;
+}
+
+#cardapio-porcoes {
+  display: none;
+}
+
 /* MODIFIER */
 
 .icon-phone {
@@ -336,4 +344,8 @@ p {
 .btn:hover {
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
   background-color: transparent;
+}
+
+.separador {
+  margin-top: 40px;
 }
