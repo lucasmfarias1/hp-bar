@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Quicksand&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -247,6 +251,7 @@ p {
 .cardapio__item__img {
   overflow:hidden;
   flex-basis: 200px;
+  position: relative;
 }
 
 .cardapio__item__img img {
@@ -284,7 +289,7 @@ p {
 }
 
 .cardapio__item-simples {
-  width: 20%;
+  width: 400px;
   margin: 10px auto;
   padding-bottom: 10px;
   display: grid;
@@ -314,14 +319,68 @@ p {
 }
 
 #cardapio-burgers {
-  display: none;
+  display: flex;
 }
 
 #cardapio-porcoes {
   display: none;
 }
 
+#cardapio-bebidas {
+  display: none;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 900px;
+  background-color: green;
+}
+
+/* TOOLTIPS */
+
+.tooltipable {
+  position: relative;
+}
+
+.tooltip {
+  pointer-events:none;
+  white-space: nowrap;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 0.1rem;
+  visibility: hidden;
+  position: absolute;
+  left: 35px;
+  top: 0%;
+  transform: translateX(0%);
+}
+
+.tooltipable:hover .tooltip {
+  visibility: visible;
+}
+
 /* MODIFIER */
+
+.burger-icons {
+  position: absolute;
+  top:0;
+  left:0;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.burger-icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+  background-color: rgba(0, 0, 0, .6);
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 2px;
+}
 
 .icon-phone {
   max-width: 30px;

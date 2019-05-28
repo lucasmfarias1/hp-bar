@@ -19,9 +19,9 @@
     <div class="header_top">
       <div class="header_top_menu">
         <ul class="header_main-menu">
-          <li><a href="#">Cardápio</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
 
@@ -43,11 +43,11 @@
 
     <div class="header_main">
       <h2>Bar + Hambúrguer + Nerds</h2>
-      <a href="#" class="btn">CONHEÇA O CARDÁPIO</a>
+      <a href="#cardapio" class="btn">CONHEÇA O CARDÁPIO</a>
     </div>
   </div>
 
-  <div class="sobre">
+  <div class="sobre" id="sobre">
     <div class="sobre__txt">
       <!-- <img src="./img/burger-line.png" alt="burger"> -->
       <h2>Saudações!</h2>
@@ -90,18 +90,38 @@
     </div>
   </div>
 
-  <div class="cardapio">
+  <div class="cardapio" data-ativo="burgers" id="cardapio">
     <h2>Cardápio</h2>
     <div class="cardapio__painel">
-      <a class="btn">Burgers</a>
-      <a class="btn">Porções</a>
-      <a class="btn">Bebidas</a>
+      <a class="btn btn-cardapio" data-aba='burgers'>Burgers</a>
+      <a class="btn btn-cardapio" data-aba='porcoes'>Porções</a>
+      <a class="btn btn-cardapio" data-aba='bebidas'>Bebidas</a>
     </div>
 
     <div class="cardapio__itens" id="cardapio-burgers">
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">ULTIMATE<br>2x CARNE<br>2x CHEESE<br>2x FLAVOUR<br>+R$8</span>
+              <img src="./img/icons/ultimate.png" alt="ultimate">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHEESE<br>TRIPLE CHEESE<br>+R$6</span>
+              <img src="./img/icons/cheese.png" alt="cheese">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHICKEN<br>HAMB EMPANADO<br>DE FRANGO<br>FREE</span>
+              <img src="./img/icons/chicken.png" alt="chicken">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">PREMIUM<br>BLEND ESPECIAL<br>BASE DE PICANHA<br>+R$8</span>
+              <img src="./img/icons/premium.png" alt="upremiumltimate">
+            </div>
+          </div>
+
           <img src="./img/burgers/heisenburger.jpg" alt="heisenburger">
         </div>
         <div class="cardapio__item__txt">
@@ -118,6 +138,22 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">ULTIMATE<br>2x CARNE<br>2x CHEESE<br>2x FLAVOUR<br>+R$8</span>
+              <img src="./img/icons/ultimate.png" alt="ultimate">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHICKEN<br>HAMB EMPANADO<br>DE FRANGO<br>FREE</span>
+              <img src="./img/icons/chicken.png" alt="chicken">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">PREMIUM<br>BLEND ESPECIAL<br>BASE DE PICANHA<br>+R$8</span>
+              <img src="./img/icons/premium.png" alt="upremiumltimate">
+            </div>
+          </div>
+
           <img src="./img/burgers/delorean.jpg" alt="delorean">
         </div>
         <div class="cardapio__item__txt">
@@ -134,6 +170,30 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">ULTIMATE<br>2x CARNE<br>2x CHEESE<br>2x FLAVOUR<br>+R$8</span>
+              <img src="./img/icons/ultimate.png" alt="ultimate">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">VEGGIE<br>HAMB SOJA<br>HAMB CENOURA<br>HAMB SHIMEJI<br>FREE</span>
+              <img src="./img/icons/veggie.png" alt="veggie">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHEESE<br>TRIPLE CHEESE<br>+R$6</span>
+              <img src="./img/icons/cheese.png" alt="cheese">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHICKEN<br>HAMB EMPANADO<br>DE FRANGO<br>FREE</span>
+              <img src="./img/icons/chicken.png" alt="chicken">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">PREMIUM<br>BLEND ESPECIAL<br>BASE DE PICANHA<br>+R$8</span>
+              <img src="./img/icons/premium.png" alt="upremiumltimate">
+            </div>
+          </div>
+
           <img src="./img/burgers/deathstar.jpg" alt="deathstar">
         </div>
         <div class="cardapio__item__txt">
@@ -150,6 +210,14 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">ULTIMATE<br>2x CARNE<br>2x CHEESE<br>2x FLAVOUR<br>+R$8</span>
+              <img src="./img/icons/ultimate.png" alt="ultimate">
+            </div>
+          </div>
+
           <img src="./img/burgers/gameover.jpg" alt="gameover">
         </div>
         <div class="cardapio__item__txt">
@@ -166,6 +234,26 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">ULTIMATE<br>2x CARNE<br>2x CHEESE<br>2x FLAVOUR<br>+R$8</span>
+              <img src="./img/icons/ultimate.png" alt="ultimate">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">VEGGIE<br>HAMB SOJA<br>HAMB CENOURA<br>HAMB SHIMEJI<br>FREE</span>
+              <img src="./img/icons/veggie.png" alt="veggie">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHEESE<br>TRIPLE CHEESE<br>+R$6</span>
+              <img src="./img/icons/cheese.png" alt="cheese">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHICKEN<br>HAMB EMPANADO<br>DE FRANGO<br>FREE</span>
+              <img src="./img/icons/chicken.png" alt="chicken">
+            </div>
+          </div>
+
           <img src="./img/burgers/clicker.jpg" alt="clicker">
         </div>
         <div class="cardapio__item__txt">
@@ -182,6 +270,18 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">ULTIMATE<br>2x CARNE<br>2x CHEESE<br>2x FLAVOUR<br>+R$8</span>
+              <img src="./img/icons/ultimate.png" alt="ultimate">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">VEGGIE<br>HAMB SOJA<br>HAMB CENOURA<br>HAMB SHIMEJI<br>FREE</span>
+              <img src="./img/icons/veggie.png" alt="veggie">
+            </div>
+          </div>
+
           <img src="./img/burgers/triforce.jpg" alt="triforce">
         </div>
         <div class="cardapio__item__txt">
@@ -198,6 +298,14 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">VEGGIE<br>HAMB SOJA<br>HAMB CENOURA<br>HAMB SHIMEJI<br>FREE</span>
+              <img src="./img/icons/veggie.png" alt="veggie">
+            </div>
+          </div>
+
           <img src="./img/burgers/chocobo.jpg" alt="chocobo">
         </div>
         <div class="cardapio__item__txt">
@@ -214,6 +322,22 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">VEGGIE<br>HAMB SOJA<br>HAMB CENOURA<br>HAMB SHIMEJI<br>FREE</span>
+              <img src="./img/icons/veggie.png" alt="veggie">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHICKEN<br>HAMB EMPANADO<br>DE FRANGO<br>FREE</span>
+              <img src="./img/icons/chicken.png" alt="chicken">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">PREMIUM<br>BLEND ESPECIAL<br>BASE DE PICANHA<br>+R$8</span>
+              <img src="./img/icons/premium.png" alt="upremiumltimate">
+            </div>
+          </div>
+
           <img src="./img/burgers/alucard.jpg" alt="alucard">
         </div>
         <div class="cardapio__item__txt">
@@ -230,6 +354,22 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">VEGGIE<br>HAMB SOJA<br>HAMB CENOURA<br>HAMB SHIMEJI<br>FREE</span>
+              <img src="./img/icons/veggie.png" alt="veggie">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">CHICKEN<br>HAMB EMPANADO<br>DE FRANGO<br>FREE</span>
+              <img src="./img/icons/chicken.png" alt="chicken">
+            </div>
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">PREMIUM<br>BLEND ESPECIAL<br>BASE DE PICANHA<br>+R$8</span>
+              <img src="./img/icons/premium.png" alt="upremiumltimate">
+            </div>
+          </div>
+
           <img src="./img/burgers/newbie.jpg" alt="newbie">
         </div>
         <div class="cardapio__item__txt">
@@ -246,6 +386,14 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
+
+          <div class="burger-icons">
+            <div class="burger-icon tooltipable">
+              <span class="tooltip">ULTIMATE<br>2x CARNE<br>2x CHEESE<br>2x FLAVOUR<br>+R$8</span>
+              <img src="./img/icons/ultimate.png" alt="ultimate">
+            </div>
+          </div>
+
           <img src="./img/burgers/vegolas.jpg" alt="vegolas">
         </div>
         <div class="cardapio__item__txt">
@@ -369,6 +517,89 @@
       </div>
 
       <div class="cardapio__item-simples separador">
+        <h3>DRINKS DA CASA</h3>
+        <h4></h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Darth Vader</h3>
+        <h4>R$34</h4>
+        <p>Jack Daniel's e licor de café</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Lucille</h3>
+        <h4>R$28</h4>
+        <p>Caipiroska de frutas vermelhas com vodka e açaí</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Piada Mortal</h3>
+        <h4>R$22</h4>
+        <p>Açaí, vodka, malibu e leite condensado</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Hell'o Kitty</h3>
+        <h4>R$22</h4>
+        <p>Vodka, suco de pêssego, leite condensado e xarope de granadine</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Dinamite Pangalatica</h3>
+        <h4>R$20</h4>
+        <p>Suco de laranja, Curaçau blue e whisky</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Brain Damage</h3>
+        <h4>R$19</h4>
+        <p>Licor de pêssego, Bailey's e granadine</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Cheetara</h3>
+        <h4>R$22</h4>
+        <p>Whisky, maracujá, Schweppes citrus e açúcar</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Piece of Heart</h3>
+        <h4>R$20</h4>
+        <p>Saquê, limão, Sprite e xarope de granadine</p>
+      </div>
+
+      <div class="cardapio__item-simples separador">
+        <h3>LEMONADES</h3>
+        <h4>R$9</h4>
+        <p></p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Pikachu</h3>
+        <h4></h4>
+        <p>Limonada com xarope de maracujá</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Charmander</h3>
+        <h4></h4>
+        <p>Limonada com granadine</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Bulbassauro</h3>
+        <h4></h4>
+        <p>Limonada com xarope de maçã verde</p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Squirtle</h3>
+        <h4></h4>
+        <p>Limonada com xarope de laranja</p>
+      </div>
+
+      <div class="cardapio__item-simples separador">
         <h3>DRINKS TRADICIONAIS</h3>
         <h4></h4>
       </div>
@@ -449,17 +680,81 @@
       </div>
 
       <div class="cardapio__item-simples separador">
-        <h3></h3>
+        <h3>CHOPP BURGMAN</h3>
         <h4></h4>
       </div>
 
       <div class="cardapio__item-simples">
-        <h3>José Cuervo</h3>
-        <h4>R$20</h4>
+        <h3>Lager</h3>
+        <h4>R$7</h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Especial</h3>
+        <h4>R$10</h4>
+        <p>Trigo - Red - Brown - IPA - Cosmonauta</p>
+      </div>
+
+      <div class="cardapio__item-simples separador">
+        <h3></h3>
+        <h4></h4>
+        <p></p>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Refrigerante</h3>
+        <h4>R$6</h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Suco Natural</h3>
+        <h4>R$7</h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Água</h3>
+        <h4>R$5</h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Flavours</h3>
+        <h4>R$9</h4>
+        <p>Cereja - Baunilha - Maçã Verde</p>
+      </div>
+
+      <div class="cardapio__item-simples separador">
+        <h3>LONG NECKS</h3>
+        <h4></h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Budweiser</h3>
+        <h4>R$7</h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Stella Artois</h3>
+        <h4>R$7</h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Heineken</h3>
+        <h4>R$7</h4>
+      </div>
+
+      <div class="cardapio__item-simples">
+        <h3>Corona</h3>
+        <h4>R$9</h4>
       </div>
     </div>
   </div>
 
+  <footer class="footer">
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
