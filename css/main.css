@@ -330,6 +330,60 @@ p {
   display: none;
 }
 
+/* CONTATO */
+.contato {
+  padding: 50px 10%;
+  display: grid;
+  grid-template-columns: .1fr 1fr 1fr .1fr;
+  grid-template-areas:
+    ". contato-map contato-txt .";
+  grid-gap: 10px;
+  background-color: #FB555E;
+  color: #FFF;
+}
+
+.contato-map {
+  grid-area: contato-map;
+  /* background-image: url('../img/mapa.jpg'); */
+  background-position: center;
+  min-height: 450px;
+}
+.contato-map img {
+  max-width: 100%;
+}
+
+.contato-txt {
+  grid-area: contato-txt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contato-txt > div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.contato-txt p {
+  margin: 0;
+}
+
+.contato-txt img {
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .contato {
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 200px;
+    grid-template-areas:
+      "contato-map"
+      "contato-txt";
+  }
+}
+
 /* FOOTER */
 
 .footer {
