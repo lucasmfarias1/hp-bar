@@ -296,6 +296,7 @@ p {
   flex-direction: column;
   text-align: center;
   background-color: rgb(39, 4, 5);
+  background-image: url('../img/bgpoke.png');
   color: #FFF;
 }
 
