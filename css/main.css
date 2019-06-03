@@ -119,10 +119,14 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: 5px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .header_logo-goku {
-  margin-top: 10px;
+  margin-top: 20px;
+  width: 16px;
+  height: 32px;
 }
 
 @keyframes float {
@@ -175,10 +179,14 @@ p {
 }
 
 @media (max-width: 1242px) {
+  .header {
+    grid-template-rows: 1fr 1fr;
+  }
+  
   .header_top {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 30px 80px;
+    grid-template-rows: 250px 30px 80px;
     grid-gap: 10px;
     grid-template-areas: "header-top-logo" "header-top-menu" "header-top-info";
   }
@@ -508,11 +516,15 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 .footer__anchor-top img {
   background-color: #fff;
   padding: 7px;
   border-radius: 50%;
+}
 
+.footer__anchor-top a {
+  border-radius: 50%;
 }
 
 /* TOOLTIPS */
