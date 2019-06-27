@@ -8,6 +8,7 @@
 
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./lightbox/css/lightbox.min.css">
 
   <title>HP Geek Bar n' Burger</title>
 </head>
@@ -16,33 +17,46 @@
   <h1>HP Geek Bar n' Burger</h1>
 
   <div class="header">
-    <div class="header_top">
-      <div class="header_top_menu">
-        <ul class="header_main-menu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#cardapio">Cardápio</a></li>
-        </ul>
-      </div>
-
-      <div class="header_top_logo">z
-        <a href="index.html" class="header_top_logo_link" draggable="false">
-          <img src="./img/logo.png" alt="hp geek bar" class="header_logo-img" draggable="false">
-        </a>
-        <img src="./img/goku.png" alt="goku" class="header_logo-goku">
-      </div>
-
-      <div class="header_top_info">
-        <ul>
-          <li><a href="#contato">Rua Dr. Luís de Faria 116, Santos-SP</a></li>
-          <li><a href="#contato"><img src="./img/phone.png" alt="phone" class="icon-phone"> (13) 3349-5770</a></li>
-        </ul>
-      </div>
+    <div class="header__item header__logo">
+      <img src="./img/logo-grande.png" alt="hp geek bar n burger">
     </div>
 
-    <div class="header_main">
-      <h2>Bar + Hambúrguer + Nerds</h2>
-      <a href="#cardapio" class="btn">CONHEÇA O CARDÁPIO</a>
-    </div>
+    <div class="header__item nav__sobre">Sobre</div>
+    <div class="header__item nav__cardapio">Cardápio</div>
+    <div class="header__item nav__franquia">Franquia</div>
+    <div class="header__item nav__delivery">Delivery</div>
+    <div class="header__item nav__quest">The Quest</div>
+    <div class="header__item nav__social">Rede Social</div>
+
+    <!--
+      <div class="header_top">
+        <div class="header_top_menu">
+          <ul class="header_main-menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+          </ul>
+        </div>
+  
+        <div class="header_top_logo">z
+          <a href="index.html" class="header_top_logo_link" draggable="false">
+            <img src="./img/logo.png" alt="hp geek bar" class="header_logo-img" draggable="false">
+          </a>
+          <img src="./img/goku.png" alt="goku" class="header_logo-goku">
+        </div>
+  
+        <div class="header_top_info">
+          <ul>
+            <li><a href="#contato">Rua Dr. Luís de Faria 116, Santos-SP</a></li>
+            <li><a href="#contato"><img src="./img/phone.png" alt="phone" class="icon-phone"> (13) 3349-5770</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="header_main">
+        <h2>Bar + Hambúrguer + Nerds</h2>
+        <a href="#cardapio" class="btn">CONHEÇA O CARDÁPIO</a>
+      </div>
+    -->
   </div>
 
   <div class="sobre" id="sobre">
@@ -66,26 +80,30 @@
         <strong>Venha fazer parte do lado Geek da força!</strong>
       </p>
     </div>
-    <div class="sobre__album">
-      <div class="sobre__album-img">
-        <img src="./img/fotos/1.jpg" alt="foto do hp bar">
+
+    <!--
+      <div class="sobre__album">
+        <div class="sobre__album-img">
+          <img src="./img/fotos/1.jpg" alt="foto do hp bar">
+        </div>
+        <div class="sobre__album-img">
+          <img src="./img/fotos/2.jpg" alt="foto do hp bar">
+        </div>
+        <div class="sobre__album-img">
+          <img src="./img/fotos/3.jpg" alt="foto do hp bar">
+        </div>
+        <div class="sobre__album-img">
+          <img src="./img/fotos/4.jpg" alt="foto do hp bar">
+        </div>
+        <div class="sobre__album-img">
+          <img src="./img/fotos/5.jpg" alt="foto do hp bar">
+        </div>
+        <div class="sobre__album-img">
+          <img src="./img/fotos/6.jpg" alt="foto do hp bar">
+        </div>
       </div>
-      <div class="sobre__album-img">
-        <img src="./img/fotos/2.jpg" alt="foto do hp bar">
-      </div>
-      <div class="sobre__album-img">
-        <img src="./img/fotos/3.jpg" alt="foto do hp bar">
-      </div>
-      <div class="sobre__album-img">
-        <img src="./img/fotos/4.jpg" alt="foto do hp bar">
-      </div>
-      <div class="sobre__album-img">
-        <img src="./img/fotos/5.jpg" alt="foto do hp bar">
-      </div>
-      <div class="sobre__album-img">
-        <img src="./img/fotos/6.jpg" alt="foto do hp bar">
-      </div>
-    </div>
+
+    -->
   </div>
 
   <div class="cardapio" data-ativo="burgers" id="cardapio">
@@ -120,7 +138,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/heisenburger.jpg" alt="heisenburger">
+          <a href="./img/burgers/heisenburger.jpg" data-lightbox="heisenburger">
+            <img src="./img/burgers/heisenburger.jpg" alt="heisenburger" />
+          </a>
+
         </div>
         <div class="cardapio__item__txt">
           <h3>Heisenburger</h3>
@@ -152,7 +173,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/delorean.jpg" alt="delorean">
+          <a href="./img/burgers/delorean.jpg" data-lightbox="delorean">
+            <img src="./img/burgers/delorean.jpg" alt="delorean">
+          </a>
+
         </div>
         <div class="cardapio__item__txt">
           <h3>DeLorean</h3>
@@ -192,7 +216,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/deathstar.jpg" alt="deathstar">
+          <a href="./img/burgers/deathstar.jpg" data-lightbox="deathstar">
+            <img src="./img/burgers/deathstar.jpg" alt="deathstar">
+          </a>
+          
         </div>
         <div class="cardapio__item__txt">
           <h3>Deathstar</h3>
@@ -216,7 +243,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/gameover.jpg" alt="gameover">
+          <a href="./img/burgers/gameover.jpg" data-lightbox="gameover">
+            <img src="./img/burgers/gameover.jpg" alt="gameover">
+          </a>
+
         </div>
         <div class="cardapio__item__txt">
           <h3>Gameover</h3>
@@ -252,7 +282,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/clicker.jpg" alt="clicker">
+          <a href="./img/burgers/clicker.jpg" data-lightbox="clicker">
+            <img src="./img/burgers/clicker.jpg" alt="clicker">
+          </a>
+          
         </div>
         <div class="cardapio__item__txt">
           <h3>Clicker</h3>
@@ -280,7 +313,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/triforce.jpg" alt="triforce">
+          <a href="./img/burgers/triforce.jpg" data-lightbox="triforce">
+            <img src="./img/burgers/triforce.jpg" alt="triforce">
+          </a>
+
         </div>
         <div class="cardapio__item__txt">
           <h3>Triforce</h3>
@@ -304,7 +340,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/chocobo.jpg" alt="chocobo">
+          <a href="./img/burgers/chocobo.jpg" data-lightbox="chocobo">
+            <img src="./img/burgers/chocobo.jpg" alt="chocobo">
+          </a>
+
         </div>
         <div class="cardapio__item__txt">
           <h3>Chocobo</h3>
@@ -335,8 +374,11 @@
               <img src="./img/icons/premium.png" alt="upremiumltimate">
             </div>
           </div>
+          
+          <a href="./img/burgers/alucard.jpg" data-lightbox="alucard">
+            <img src="./img/burgers/alucard.jpg" alt="alucard">
+          </a>
 
-          <img src="./img/burgers/alucard.jpg" alt="alucard">
         </div>
         <div class="cardapio__item__txt">
           <h3>Alucard</h3>
@@ -368,7 +410,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/newbie.jpg" alt="newbie">
+          <a href="./img/burgers/newbie.jpg" data-lightbox="newbie">
+            <img src="./img/burgers/newbie.jpg" alt="newbie">
+          </a>
+
         </div>
         <div class="cardapio__item__txt">
           <h3>Newbie</h3>
@@ -392,7 +437,10 @@
             </div>
           </div>
 
-          <img src="./img/burgers/vegolas.jpg" alt="vegolas">
+          <a href="./img/burgers/vegolas.jpg" data-lightbox="vegolas">
+            <img src="./img/burgers/vegolas.jpg" alt="vegolas">
+          </a>
+
         </div>
         <div class="cardapio__item__txt">
           <h3>Vegolas</h3>
@@ -408,7 +456,9 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
-          <img src="./img/burgers/kakarot.jpg" alt="kakarot">
+            <a href="./img/burgers/kakarot.jpg" data-lightbox="kakarot">
+              <img src="./img/burgers/kakarot.jpg" alt="kakarot">
+            </a>
         </div>
         <div class="cardapio__item__txt">
           <h3>Kakarot</h3>
@@ -424,7 +474,9 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
-          <img src="./img/burgers/toad.jpg" alt="toad">
+          <a href="./img/burgers/toad.jpg" data-lightbox="toad">
+            <img src="./img/burgers/toad.jpg" alt="toad">
+          </a>
         </div>
         <div class="cardapio__item__txt">
           <h3>Cp. Toad</h3>
@@ -440,7 +492,9 @@
 
       <div class="cardapio__item">
         <div class="cardapio__item__img">
-          <img src="./img/burgers/sidekick.jpg" alt="sidekicks">
+          <a href="./img/burgers/sidekick.jpg" data-lightbox="sidekick">
+            <img src="./img/burgers/sidekick.jpg" alt="sidekicks">
+          </a>
         </div>
         <div class="cardapio__item__txt">
           <h3>Sidekicks (acompanhamentos)</h3>
@@ -794,6 +848,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./lightbox/js/lightbox.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
