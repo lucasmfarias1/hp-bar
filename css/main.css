@@ -48,47 +48,80 @@ p {
   color: #fff;
   background-size: cover;
   display: grid;
-  grid-template-rows: repeat(7, 1fr);
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .header__item {
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .header__logo {
-  grid-column: 4;
+  grid-column: 4 / 6;
   grid-row: 1;
 }
 .header__logo img {
   max-width: 150%;
+  width: 300px;
+}
+
+.nav__item img {
+  width: 200px;
 }
 
 .nav__sobre {
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 3;
 }
 .nav__cardapio {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 4;
 }
 .nav__franquia {
   grid-column: 3;
-  grid-row: 6;
+  grid-row: 5;
 }
 .nav__delivery {
-  grid-column: 5;
+  grid-column: 3;
   grid-row: 6;
 }
 .nav__quest {
-  grid-column: 6;
-  grid-row: 4;
+  grid-column: 3;
+  grid-row: 7;
 }
 .nav__social {
-  grid-column: 5;
+  grid-column: 2;
   grid-row: 2;
+}
+
+#godzilla-box {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+#godzilla {
+  max-height: 90vh;
+  animation: 2s walk infinite;
+}
+
+@keyframes walk {
+  0% {
+    transform: translatey(35px) rotate(-2deg);
+  }
+  65% {
+    transform: translatey(0) rotate(0);
+  }
+  100% {
+    transform: translatey(35px) rotate(-2deg);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -96,7 +129,6 @@ p {
     grid-column: 3 / 6;
   }
   .header__logo img {
-    max-width: 100%;
   }
 }
 
