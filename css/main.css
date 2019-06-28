@@ -64,12 +64,14 @@ p {
   grid-row: 1;
 }
 .header__logo img {
-  max-width: 150%;
   width: 300px;
 }
 
 .nav__item img {
   width: 200px;
+}
+
+.nav__item {
 }
 
 .nav__sobre {
@@ -124,17 +126,44 @@ p {
   }
 }
 
-@media (max-width: 1000px) {
-  .header__logo {
-    grid-column: 3 / 6;
+@media (max-width: 1200px) {
+  .nav__sobre {
+    grid-column: 2;
   }
-  .header__logo img {
+  .nav__cardapio {
+    grid-column: 2;
+  }
+  .nav__franquia {
+    grid-column: 2;
+  }
+  .nav__delivery {
+    grid-column: 2;
+  }
+  .nav__quest {
+    grid-column: 2;
+  }
+
+  #godzilla {
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #godzilla {
+    left: 150px;
+  }
+  .header__logo {
+    grid-column: 2;
   }
 }
 
 @media (max-width: 700px) {
-  .header__logo {
-    grid-column: 2 / 7;
+  .nav__item img {
+    width: 150px;
+  }
+  #godzilla {
+    left: 250px;
   }
 }
 
@@ -163,8 +192,8 @@ p {
   grid-template-columns: 1fr 400px 1fr;
   grid-template-areas: ". sobre-txt sobre-img .";
   grid-gap: 20px;
-  background-color: #FB555E;
-  color: #FFF;
+  background-color: #041e31;
+  color: #fff;
 }
 
 .sobre__txt {
@@ -200,7 +229,7 @@ p {
   transform: scale(1.2);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .sobre {
     padding: 40px 20px;
     grid-template-columns: 1fr;
@@ -234,7 +263,7 @@ p {
   flex-direction: column;
   text-align: center;
   background-color: rgb(39, 4, 5);
-  background-image: url('../img/bgpoke.png');
+  background-image: url('../img/bgpoke-2.png');
   color: #FFF;
 }
 
@@ -252,7 +281,7 @@ p {
 }
 
 .cardapio__item {
-  background-color: #FB555E;
+  background-color: #012f50;
   color: #fff;
   display: flex;
   flex-basis: 550px;
