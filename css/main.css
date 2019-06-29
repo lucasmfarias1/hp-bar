@@ -187,7 +187,9 @@ p {
 /* SOBRE */
 
 .sobre {
-  padding: 50px 10%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 120px 10%;
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
   grid-template-areas: ". sobre-txt sobre-img .";
@@ -231,17 +233,15 @@ p {
 
 @media (max-width: 800px) {
   .sobre {
-    padding: 40px 20px;
+    padding: 20px 20px;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "sobre-txt"
-      "sobre-img";
-    grid-gap: 20px;
-  }
+      "sobre-txt";
+}
 
   .sobre__txt {
     padding: 0 5%;
-  }
+}
 
   .sobre__album {
     display: flex;
@@ -390,6 +390,14 @@ p {
   .cardapio__item-simples {
     width: auto;
   }
+}
+
+/* FRANQUIA */
+.franquia {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #dcc09c;
+  padding: 50px 10%;
 }
 
 /* CONTATO */
