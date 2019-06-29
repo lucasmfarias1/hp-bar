@@ -442,7 +442,7 @@ p {
   .contato {
     padding: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 400px;
+    grid-template-rows: 500px 350px;
     grid-template-areas: "contato-map" "contato-txt";
   }
 }
