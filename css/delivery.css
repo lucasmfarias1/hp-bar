@@ -1,0 +1,68 @@
+/* DELIVERY */
+
+.delivery {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #000;
+  background-image: url('../img/delivery/planet.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.delivery__logo {
+  width: 200px;
+}
+
+.delivery__whats {
+  min-height: 200px;
+  max-height: 625px;
+  filter: drop-shadow(0 0 25px #000);
+}
+
+.delivery__link-whats {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.delivery__zap-box {
+  display: flex;
+  align-items: center;
+}
+
+.delivery__zap-box img {
+  margin-right: 10px;
+}
+
+.delivery__goku-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery__whatsapp-logo {
+  position: relative;
+  bottom: 10px;
+  animation: genki 4s infinite;
+  filter: drop-shadow(0 0 15px #eef);
+}
+
+@keyframes genki {
+  0% {
+    filter: drop-shadow(0 0 15px #eef);
+    transform: translatey(0);
+  }
+  50% {
+    filter: drop-shadow(0 0 25px #eef);
+    transform: translatey(-15px);
+  }
+  100% {
+    filter: drop-shadow(0 0 15px #eef);
+    transform: translatey(0);
+  }
+}
