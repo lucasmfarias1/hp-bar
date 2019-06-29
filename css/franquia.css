@@ -21,8 +21,8 @@
 }
 
 .franquia__logo-franquia {
-  width: 600px;
   max-width: 100%;
+  margin: 20px 0;
 }
 
 .franquia__arquivo-confidencial {
@@ -43,9 +43,16 @@
   transition: .2s all;
   border: 1px solid #dcc09c;
   cursor: pointer;
+  margin: 7px 0 20px 0;
 }
 .btn-franquia:hover {
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
   background-color: #dcc09c;
   color: #000;
+}
+
+@media (max-width: 550px) {
+  .franquia__logo {
+    width: 150px;
+  }
 }

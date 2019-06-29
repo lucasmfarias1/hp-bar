@@ -20,6 +20,7 @@
 }
 
 .delivery__whats {
+  max-width: 100%;
   min-height: 200px;
   max-height: 625px;
   filter: drop-shadow(0 0 25px #000);
@@ -64,5 +65,11 @@
   100% {
     filter: drop-shadow(0 0 15px #eef);
     transform: translatey(0);
+  }
+}
+
+@media (max-width: 550px) {
+  .delivery__link-whats {
+    font-size: 1.5rem;
   }
 }
