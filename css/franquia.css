@@ -1,0 +1,51 @@
+/* FRANQUIA */
+
+.franquia {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #dcc09c;
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Bree Serif', serif;
+}
+
+.franquia h2 {
+  display: none;
+}
+
+.franquia__logo {
+  width: 250px;
+}
+
+.franquia__logo-franquia {
+  width: 600px;
+  max-width: 100%;
+}
+
+.franquia__arquivo-confidencial {
+  width: 200px;
+  max-width: 100%;
+  border: 5px solid #000;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn-franquia {
+  background-color: #000;
+  color: #dcc09c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.3rem;
+  transition: .2s all;
+  border: 1px solid #dcc09c;
+  cursor: pointer;
+}
+.btn-franquia:hover {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+  background-color: #dcc09c;
+  color: #000;
+}

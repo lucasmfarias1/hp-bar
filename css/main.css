@@ -382,7 +382,7 @@ p {
     margin: 5px;
     flex-wrap: wrap;
   }
-  
+
   .cardapio__painel .btn {
     margin: 5px;
   }
@@ -390,14 +390,6 @@ p {
   .cardapio__item-simples {
     width: auto;
   }
-}
-
-/* FRANQUIA */
-.franquia {
-  box-sizing: border-box;
-  min-height: 100vh;
-  background-color: #dcc09c;
-  padding: 50px 10%;
 }
 
 /* CONTATO */
