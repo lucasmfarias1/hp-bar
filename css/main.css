@@ -382,6 +382,23 @@ p {
     margin: 5px;
     flex-wrap: wrap;
   }
+  .cardapio__item {
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .cardapio__item__img {
+    /* flex-basis: 400px; */
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardapio__item__img img {
+    width: 100%;
+    height: auto;
+  }
 
   .cardapio__painel .btn {
     margin: 5px;
