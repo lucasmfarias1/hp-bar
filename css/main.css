@@ -60,8 +60,11 @@ p {
 }
 
 .header__logo {
-  grid-column: 4 / 6;
-  grid-row: 1;
+  /* grid-column: 4 / 6;
+  grid-row: 1; */
+  position: absolute;
+  top: 10px;
+  right: 0; left: 0;
 }
 .header__logo img {
   width: 300px;
@@ -127,20 +130,23 @@ p {
 }
 
 @media (max-width: 1200px) {
+  .nav__item {
+    margin-left: 15px;
+  }
   .nav__sobre {
-    grid-column: 2;
+    grid-column: 1;
   }
   .nav__cardapio {
-    grid-column: 2;
+    grid-column: 1;
   }
   .nav__franquia {
-    grid-column: 2;
+    grid-column: 1;
   }
   .nav__delivery {
-    grid-column: 2;
+    grid-column: 1;
   }
   .nav__quest {
-    grid-column: 2;
+    grid-column: 1;
   }
 
   #godzilla {
@@ -153,8 +159,8 @@ p {
   #godzilla {
     left: 150px;
   }
-  .header__logo {
-    grid-column: 2;
+  .header__logo img {
+    max-width: 50vw;
   }
 }
 
