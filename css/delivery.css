@@ -68,6 +68,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .delivery__logo {
+    width: 150px;
+  }
+}
+
 @media (max-width: 550px) {
   .delivery__link-whats {
     font-size: 1.5rem;
