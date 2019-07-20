@@ -592,3 +592,11 @@ p {
 .separador {
   margin-top: 40px;
 }
+
+.my-1 {
+  margin: 10px 0;
+}
+
+.my-2 {
+  margin: 20px 0;
+}

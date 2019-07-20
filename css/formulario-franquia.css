@@ -1,0 +1,13 @@
+input {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px;
+  width: 300px;
+  max-width: 100%;
+  margin: 2px 0 15px 0;
+  border: 1px solid #4e3e29;
+}
+
+p, h3, h4 {
+  text-align: center;
+}
