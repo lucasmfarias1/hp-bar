@@ -113,11 +113,13 @@ p {
 }
 
 #godzilla {
+  display: block;
   max-height: 90vh;
   animation: 2s walk infinite;
 }
 
 .godzilla__video {
+  display: none;
   width: 100%;
 }
 
@@ -170,10 +172,20 @@ p {
 
 @media (max-width: 700px) {
   .nav__item img {
-    width: 150px;
+  height: 40px;
   }
   #godzilla {
     left: 250px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #godzilla {
+    display: none;
+  }
+  
+  .godzilla__video {
+    display: block;
   }
 }
 
