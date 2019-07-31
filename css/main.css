@@ -71,7 +71,7 @@ p {
 }
 
 .nav__item img {
-  width: 200px;
+  height: 70px;
 }
 
 .nav__item {
@@ -115,6 +115,10 @@ p {
 #godzilla {
   max-height: 90vh;
   animation: 2s walk infinite;
+}
+
+.godzilla__video {
+  width: 100%;
 }
 
 @keyframes walk {

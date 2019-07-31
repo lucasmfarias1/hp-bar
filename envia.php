@@ -1,18 +1,40 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-require 'phpmailer/PHPMailer.php';
+require './phpmailer/Exception.php';
+require './phpmailer/PHPMailer.php';
 
-$mail = new PHPMailer(true);
+$nome = $_POST['nome'];
+$idade = $_POST['idade'];
+$whats = $_POST['whats'];
+$cpf = $_POST['cpf'];
+$rg = $_POST['rg'];
+$cidade = $_POST['cidade'];
+$email = $_POST['email'];
+$formacao = $_POST['formacao'];
+
+if (!$nome) header('Location: franquia.html');
+
+$mail = new PHPMailer();
 
 //Recipients
-$mail->setFrom('from@example.com', 'Mailer');
-$mail->addAddress('ellen@example.com');               // Name is optional
+$mail->setFrom('mail@stackstaging.com');
+$mail->addAddress('lucasmfarias1@gmail.com');            // Name is optional
 
 // Content
-$mail->isHTML(true);                                  // Set email format to HTML
-$mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+$mail->isHTML(true);                               // Set email format to HTML
+$mail->Subject = 'Iniciativa Franqueadores';
+$mail->Body    = "
+  <p>Nome: $nome</p>
+  <p>Idade: $idade</p>
+  <p>WhatsApp: $whats</p>
+  <p>CPF: $cpf</p>
+  <p>RG: $rg</p>
+  <p>Cidade para abertura: $cidade</p>
+  <p>Email: $email</p>
+  <p>Formação: $formacao</p>
+";
 
 $mail->send();
 
