@@ -118,7 +118,12 @@ p {
   animation: 2s walk infinite;
 }
 
-.godzilla__video {
+.godzilla__video-mobile {
+  display: none;
+  width: 100%;
+}
+
+.godzilla__video-tablet {
   display: none;
   width: 100%;
 }
@@ -179,12 +184,30 @@ p {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 568px) {
   #godzilla {
     display: none;
   }
   
-  .godzilla__video {
+  .godzilla__video-mobile {
+    display: block;
+  }
+
+  .godzilla__video-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 992px) {
+  #godzilla {
+    display: none;
+  }
+  
+  .godzilla__video-mobile {
+    display: none;
+  }
+
+  .godzilla__video-tablet {
     display: block;
   }
 }
