@@ -79,9 +79,15 @@ p {
 
 .nav__sobre {
   grid-column: 3;
+  grid-row: 2;
+}
+.nav__cardapio img { height: 85px }
+.nav__cardapio {
+  grid-column: 3;
   grid-row: 3;
 }
-.nav__cardapio {
+.nav__almoco img { height: 85px }
+.nav__almoco {
   grid-column: 3;
   grid-row: 4;
 }
@@ -147,6 +153,9 @@ p {
   .nav__sobre {
     grid-column: 1;
   }
+  .nav__almoco {
+    grid-column: 1;
+  }
   .nav__cardapio {
     grid-column: 1;
   }
@@ -177,7 +186,13 @@ p {
 
 @media (max-width: 700px) {
   .nav__item img {
-  height: 40px;
+    height: 40px;
+  }
+  .nav__almoco img {
+    height: 50px;
+  }
+  .nav__cardapio img {
+    height: 50px;
   }
   #godzilla {
     left: 250px;
@@ -507,6 +522,24 @@ p {
     grid-template-rows: 500px 350px;
     grid-template-areas: "contato-map" "contato-txt";
   }
+}
+
+/* ALMOCO */
+
+.almoco {
+  box-sizing: border-box;
+  background: linear-gradient(rgb(26, 16, 4), rgb(41, 19, 10));
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Quicksand ', sans-serif;
+}
+
+.almoco #almoco-cardapio {
+  width: 100%;
+  max-width: 750px;
 }
 
 /* FOOTER */
